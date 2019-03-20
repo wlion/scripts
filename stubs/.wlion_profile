@@ -1,4 +1,0 @@
-# Path
-export PATH=/usr/local/bin:$PATH
-
-# Aliases
