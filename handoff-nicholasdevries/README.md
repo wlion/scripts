@@ -46,3 +46,11 @@ Our project templates are already set up to use the latest Webpack (v4). Our Web
 - [Open Compute Product Search with Algolia](http://opencompute.wldev/products) ([code](https://github.com/wlion/open-compute-project/blob/master/resources/assets/js/marketplace.js))
 - [Open Compute Member Directory](http://opencompute.wldev/membership) ([code](https://github.com/wlion/open-compute-project/blob/master/resources/assets/js/directory.js))
 - [Propane Dealer Search](https://propane.com/where-to-buy/find-propane-supplier/) ([code](https://github.com/wlion/propane-com/blob/master/wp-content/themes/wlion/assets/js/map-locator.js))
+
+# fe dev interview process
+
+- [take home exercise](https://github.com/wlion/candidate-exercise-fe)
+- in-person interview ([questions](https://codesandbox.io/s/ry6yw4z3rp?module=%2Fsrc%2FforEach.js)) ([example answers](https://codesandbox.io/s/x7ryvql0qp?module=%2Fsrc%2FforEach.js))
+  - the tests will pass once the functions are correct
+  - functions should be written in this order: forEach -> map -> reduce
+  - candidate can ask questions and consult documentation to see the standard js api for these functions
