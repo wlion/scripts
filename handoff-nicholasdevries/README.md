@@ -18,11 +18,18 @@
    $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
    $ nvm install node
    ```
-1. Install [Valet](https://laravel.com/docs/5.8/valet#installation) and change tld
+1. Install [Valet](https://laravel.com/docs/5.8/valet#installation).. 
+   ```
+   $ composer global require laravel/valet 
+   $ valet install
+   ```
+1. ..and change tld
    ```
    $ valet tld wldev
    ```
-1. Install your preferred editor and editorconfig/prettier plugins to automatically match the formatting defined in each project's `.prettierrc` and `.editorconfig`
+1. Install your preferred editor (e.g. [VSCode](https://code.visualstudio.com/)) and editorconfig/prettier (for VSCode: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) plugins to automatically match the formatting defined in each project's `.prettierrc` and `.editorconfig`.  
+   >If you've installed VSCode, install the [php-cs-fixer](https://marketplace.visualstudio.com/items?itemName=junstyle.php-cs-fixer) plugin as well with the [following](https://whitelion.atlassian.net/wiki/spaces/DEV/pages/1077903391/PHP%2BStandards%2Bw%2BVS%2BCode) settings to match the team's PHP formatting.
+   
 1. Install other useful programs like [Sequel Pro](https://www.sequelpro.com/)
 
 > Note: you may need to restart your terminal between each of the steps above.
