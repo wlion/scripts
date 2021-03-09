@@ -6,7 +6,7 @@
    ```
 1. Install Homebrew packages
    ```
-   $ brew install antigen findutils bash vim bat php git wp-cli python mysql@5.7 grep zsh composer coreutils nginx ruby
+   $ brew install antigen findutils bash vim bat php@7.3 git wp-cli python mysql@5.7 grep zsh composer coreutils nginx ruby
    ```
 1. Place [.zshrc](./.zshrc) file in home directory (`~/`) and modify as needed
 1. Change your default shell to zsh
