@@ -4,6 +4,7 @@
 
 # Load Antigen
 # You can find the installation location with `brew ls antigen`
+# If silicon chip: source /opt/homebrew/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
 source /usr/local/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
 
 # Bootstrap
@@ -30,7 +31,9 @@ antigen apply
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/coreutils/libexec/gnubin:$PATH
 
 # MANPATH
+# If silicon chip: export MANPATH="/opt/homebrew/Cellar/coreutils/libexec/gnuman:$MANPATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
 
 # NVM PATH
 export NVM_DIR="$HOME/.nvm"
@@ -40,12 +43,14 @@ export NVM_DIR="$HOME/.nvm"
 # export EDITOR=code
 
 # Homebrew
+# If silicon chip: export PATH=/opt/homebrew/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
 # Composer
 export PATH=$PATH:$HOME/.composer/vendor/bin
 
 # Previous MySQL version
+# If silicon chip: export PATH="/opt/homebrew/Cellar/mysql@5.7/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 # ==============================
@@ -88,11 +93,14 @@ alias brewperm='sudo chown -R $(whoami) $(brew --prefix)/*'
 # Update brew packages
 alias brewup='brew -v update; brew upgrade --force-bottle; brew cleanup; brew doctor'
 
+# Open VSCode from cli
+alias code="open -a /Applications/Visual\ Studio\ Code.app"
+
 # Clear log files
 alias clearlog='sudo rm -rf /var/log/asl/*.asl'
 
 # Clear mail
-alias clearmail='sudo rm /var/mail/nicholasdevries'
+alias clearmail='sudo rm /var/mail/$(whoami)'
 
 # Update antigen
 alias antup='antigen update; antigen cleanup'
